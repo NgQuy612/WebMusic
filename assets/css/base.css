@@ -1,0 +1,122 @@
+:root {
+    --active-color: rgb(240, 38, 173);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #bdbdbd;
+    --gray-color: #b8b5b5;
+    --line-color: #9b9999;
+
+    --control-height: 186px;
+    
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+    line-height: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+*.show{
+    display: block;
+}
+
+/* A Item into list song */
+
+.song{
+    display: flex;
+    flex-wrap: wrap;
+    height: 56px;
+    width: 100%;
+    margin-top: 18px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.song:active{
+    opacity: 0.85;
+}
+
+.song:hover{
+    opacity: 0.85;
+}
+
+.body-song{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+.information-song{
+    
+}
+
+.title{
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin: 0;
+    width: 200px;
+    height: 20px;
+    overflow: hidden;
+    color: var(--gray-color);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.author{
+    margin:0 0 0 0;
+    line-height: 1.6rem;
+    height: 16px;
+    overflow: hidden;
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.feedback {
+    display: flex;
+    width: 120px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.btn--like{
+    position: relative;
+    top: -1px;
+}
+
+.durationTime p,
+.currentTime p {
+    font-size: 1.4rem;
+    color: var(--gray-color);  
+}
+
+
+/* Creat a button---*/
+.btn{
+    font-size: 1.8rem;
+    color: var(--gray-color);
+    padding: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+.btn.active i{
+    color: var(--active-color) !important;
+}

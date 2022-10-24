@@ -1,0 +1,210 @@
+
+.container {
+    background-image: url('../image/background.jpg');
+    background-size: cover;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px; 
+}
+
+
+.container__main{
+    min-height: 516px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    margin-left: 4px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*----- PLAYER MUSIC CURRENT SONG----- */
+
+.song.song--player{
+    margin-top: 12px;
+}
+
+
+.btn.btn__play--list{
+    position: relative;
+    top: -2px;
+    margin-right: 24px;
+    margin-left: 10px;
+    color: var(--gray-color);
+}
+
+/*-------Playing Music ------*/
+.song--player .icon-pause{
+    display: none;
+}
+
+.song--player .icon-bars{
+    padding: 5px;
+    display: none;
+}
+
+.song--player.playing .icon-pause{
+    display: inline-block;
+}
+
+.song--player.playing .icon-play{
+    display: none;
+}
+/*---end---*/
+
+.song--player .title,
+.song--player .author
+{
+     color:rgb(240, 38, 173) ; 
+}
+
+.currentTime p {
+    color: rgb(240, 38, 173) !important;
+}
+
+.song--player i
+{
+    background:
+    -webkit-linear-gradient(45deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.progress {
+	background-color: var(--gray-color);
+	position: relative;
+	height: 2px;
+    border-radius: 5px;
+	width: 100%;
+    cursor: pointer;
+    
+}
+
+.progress-bar {
+	background: linear-gradient(to left, red, blue);
+	border-radius: 20px;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+
+  /* List music ---------*/
+.container__main-playlist{
+    min-height: 320px;
+    max-height: 320px;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.container__main-playlist::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+
+.song.song--list{
+    border-bottom: 2px solid var(--line-color);
+}
+
+
+/* Control music ------ or options */
+.container__main-control{
+    display: flex;
+    height: 110px;
+    align-items: center;
+    justify-items: center;
+}
+
+.control__song{
+    display: flex;
+    flex: 1;
+    padding:0 32px;
+    align-items: center;
+}
+
+.control__song i{
+    background:
+    -webkit-linear-gradient(45deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn--next i, .btn--prev i{
+    font-size: 3rem;
+}
+
+.btn__play--footer i{
+    font-size: 5rem;
+}
+
+.btn__play--footer {
+    margin: 0 12px 0 20px;
+}
+
+.change-options{
+    display: flex;
+    width: 168px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.options{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.btn--repeat{
+    position: relative;
+    top: 0px;
+}
+
+.volume {
+    display: none;
+	background-color: var(--gray-color);
+	position: relative;
+    top: 10px;
+	height: 4px;
+    border-radius: 5px;
+	width: 116px;
+    cursor: pointer;
+}
+
+.volume-bar {
+	background: linear-gradient(to left, red, blue);
+	border-radius: 20px;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+/* WHEN MUSIC PLAYING AND ACTIITES CONTROL*/
+
+.container__main-control .footer-pause{
+    display: none;
+}
+
+.container__main-control.playing .footer-pause{
+    display: inline-block;
+}
+
+.container__main-control.playing .footer-play{
+    display: none;
+}
+
+
+/* This is image of abum */
+.container__image{
+    height: 516px;
+    background-repeat: no-repeat;
+    border-radius: 1px solid var(--border-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-size: cover;
+}

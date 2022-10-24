@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WuyMusic</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/image/logo.ico" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="grid wide">
+        <div class="row container">
+            <div class="col l-5 m-5 c-12 container__main ">
+
+                <div class="container__main-player">
+                    <div class="song song--player ">
+                        <div class="btn btn__play--list">
+                            <i class="icon-pause fa-solid fa-pause"></i>
+                            <i class="icon-play fa-regular fa-circle-play"></i>
+                            <i class="icon-bars fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="body-song">
+                            <div class="information-song">
+                                <h3 class="title">Work of JS</h3>
+                                <p class="author">Work of JS</p>
+                            </div>
+
+                            <div class="feedback">
+                                <div class="btn btn--comment">
+                                    <i class="fa-solid fa-comment"></i>
+                                </div>
+                                <div class="btn btn--like">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                
+                                <div class="currentTime">
+                                    <p>00:00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+ 
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+
+                </div>
+
+                <div class="container__main-playlist">
+
+                </div> 
+
+                <div class="container__main-control">
+                    <div class="control__song">
+                        <div class="btn btn--prev">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+
+                        <div class="btn btn__play--footer">
+                            <i class="footer-pause fa-solid fa-pause"> </i>
+                            <i class="footer-play fa-regular fa-circle-play"> </i>
+                        </div>
+
+                        <div class="btn btn--next">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="change-options">
+                        <div class="options">
+                            <div class="btn btn--random">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </div>
+                            <div class="btn btn--repeat">
+                                <i class="fa-solid fa-repeat"></i>
+                            </div>
+    
+                            <div class="btn btn--volume">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </div>
+                        </div>
+
+                        <div class="volume">
+                            <div class="volume-bar"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col l-3 m-3 c-12 container__image" >
+                
+            </div>
+        </div>
+        <audio id="audio" src=""></audio>
+    </div>
+         
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
